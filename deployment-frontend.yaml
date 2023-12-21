@@ -6,7 +6,7 @@ metadata:
     app: todonodejs
     name: frontend
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: todonodejs
@@ -20,7 +20,7 @@ spec:
       containers:
       - resources:
           limits:
-            cpu: '0.5'
+            cpu: '0.4'
         image: quay.io/redhattraining/todo-single:v1.0
         name: todonodejs
         ports:

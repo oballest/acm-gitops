@@ -21,10 +21,8 @@ spec:
       - resources:
           limits:
             cpu: '0.4'
-            memory: 250m
           requests:
             cpu: '0.3'
-            memory: 200m  
         image: quay.io/redhattraining/todo-single:v1.0
         name: todonodejs
         ports:
